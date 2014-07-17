@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE80723419776A5E0002F552 /* YNGongzuoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80723319776A5E0002F552 /* YNGongzuoViewController.m */; };
+		CE80723A19776BF20002F552 /* YNXianchangkanchaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80723919776BF20002F552 /* YNXianchangkanchaViewController.m */; };
+		CE80723D19776C3C0002F552 /* FileListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80723C19776C3C0002F552 /* FileListViewController.m */; };
+		CE80724219776C6E0002F552 /* SecurityTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE80724119776C6E0002F552 /* SecurityTable.xib */; };
+		CE80724419776D290002F552 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE80724319776D290002F552 /* QuartzCore.framework */; };
 		CEF1D45C1976757800D4B18E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF1D45B1976757800D4B18E /* Foundation.framework */; };
 		CEF1D45E1976757800D4B18E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF1D45D1976757800D4B18E /* CoreGraphics.framework */; };
 		CEF1D4601976757800D4B18E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF1D45F1976757800D4B18E /* UIKit.framework */; };
@@ -72,6 +77,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE80723219776A560002F552 /* YNGongzuoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YNGongzuoViewController.h; sourceTree = "<group>"; };
+		CE80723319776A5E0002F552 /* YNGongzuoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNGongzuoViewController.m; sourceTree = "<group>"; };
+		CE80723819776BEC0002F552 /* YNXianchangkanchaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YNXianchangkanchaViewController.h; sourceTree = "<group>"; };
+		CE80723919776BF20002F552 /* YNXianchangkanchaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNXianchangkanchaViewController.m; sourceTree = "<group>"; };
+		CE80723B19776C360002F552 /* FileListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileListViewController.h; sourceTree = "<group>"; };
+		CE80723C19776C3C0002F552 /* FileListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileListViewController.m; sourceTree = "<group>"; };
+		CE80724119776C6E0002F552 /* SecurityTable.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecurityTable.xib; sourceTree = "<group>"; };
+		CE80724319776D290002F552 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CEF1D4581976757800D4B18E /* YunGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YunGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF1D45B1976757800D4B18E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEF1D45D1976757800D4B18E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -153,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE80724419776D290002F552 /* QuartzCore.framework in Frameworks */,
 				CEF1D74D1977624700D4B18E /* libsqlite3.0.dylib in Frameworks */,
 				CEF1D74B1977623600D4B18E /* libz.dylib in Frameworks */,
 				CEF1D45E1976757800D4B18E /* CoreGraphics.framework in Frameworks */,
@@ -174,6 +188,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE8072311977698B0002F552 /* 计划作业 */ = {
+			isa = PBXGroup;
+			children = (
+				CEF1D74519775C4900D4B18E /* TaskViewController.h */,
+				CEF1D74619775C5200D4B18E /* TaskViewController.m */,
+				CEF1D6F61976D3A900D4B18E /* Task.xib */,
+				CE80723219776A560002F552 /* YNGongzuoViewController.h */,
+				CE80723319776A5E0002F552 /* YNGongzuoViewController.m */,
+				CE80723519776B0F0002F552 /* 现场勘查 */,
+				CE80723619776B1F0002F552 /* 作业文件编制 */,
+				CE80723719776B2C0002F552 /* 现场作业 */,
+			);
+			name = "计划作业";
+			sourceTree = "<group>";
+		};
+		CE80723519776B0F0002F552 /* 现场勘查 */ = {
+			isa = PBXGroup;
+			children = (
+				CE80723819776BEC0002F552 /* YNXianchangkanchaViewController.h */,
+				CE80723919776BF20002F552 /* YNXianchangkanchaViewController.m */,
+			);
+			name = "现场勘查";
+			sourceTree = "<group>";
+		};
+		CE80723619776B1F0002F552 /* 作业文件编制 */ = {
+			isa = PBXGroup;
+			children = (
+				CE80723B19776C360002F552 /* FileListViewController.h */,
+				CE80723C19776C3C0002F552 /* FileListViewController.m */,
+			);
+			name = "作业文件编制";
+			sourceTree = "<group>";
+		};
+		CE80723719776B2C0002F552 /* 现场作业 */ = {
+			isa = PBXGroup;
+			children = (
+				CE80724119776C6E0002F552 /* SecurityTable.xib */,
+			);
+			name = "现场作业";
+			sourceTree = "<group>";
+		};
 		CEF1D44F1976757800D4B18E = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +251,7 @@
 		CEF1D45A1976757800D4B18E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE80724319776D290002F552 /* QuartzCore.framework */,
 				CEF1D74C1977624700D4B18E /* libsqlite3.0.dylib */,
 				CEF1D74A1977623600D4B18E /* libz.dylib */,
 				CEF1D45B1976757800D4B18E /* Foundation.framework */,
@@ -215,6 +271,7 @@
 				CEF1D46A1976757800D4B18E /* AppDelegate.h */,
 				CEF1D46B1976757800D4B18E /* AppDelegate.m */,
 				CEF1D6EA1976BAC900D4B18E /* Login */,
+				CE8072311977698B0002F552 /* 计划作业 */,
 				CEF1D6C51976BA5E00D4B18E /* Images */,
 				CEF1D46D1976757800D4B18E /* Images.xcassets */,
 				CEF1D4621976757800D4B18E /* Supporting Files */,
@@ -284,9 +341,6 @@
 				CEF1D6ED1976BCBB00D4B18E /* LoginViewController.xib */,
 				CEF1D6F01976C56E00D4B18E /* ClassofWorkViewController.h */,
 				CEF1D6F11976C58C00D4B18E /* ClassofWorkViewController.m */,
-				CEF1D74519775C4900D4B18E /* TaskViewController.h */,
-				CEF1D74619775C5200D4B18E /* TaskViewController.m */,
-				CEF1D6F61976D3A900D4B18E /* Task.xib */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -412,6 +466,7 @@
 			files = (
 				CEF1D6DF1976BA5E00D4B18E /* new.png in Resources */,
 				CEF1D6DD1976BA5E00D4B18E /* main.png in Resources */,
+				CE80724219776C6E0002F552 /* SecurityTable.xib in Resources */,
 				CEF1D4661976757800D4B18E /* InfoPlist.strings in Resources */,
 				CEF1D6E81976BA5E00D4B18E /* trans.png in Resources */,
 				CEF1D6DB1976BA5E00D4B18E /* login.png in Resources */,
@@ -453,11 +508,14 @@
 			files = (
 				CEF1D46C1976757800D4B18E /* AppDelegate.m in Sources */,
 				CEF1D73D19775A9F00D4B18E /* AFSecurityPolicy.m in Sources */,
+				CE80723D19776C3C0002F552 /* FileListViewController.m in Sources */,
 				CEF1D73A19775A9F00D4B18E /* AFHTTPRequestOperationManager.m in Sources */,
+				CE80723A19776BF20002F552 /* YNXianchangkanchaViewController.m in Sources */,
 				CEF1D73919775A9F00D4B18E /* AFHTTPRequestOperation.m in Sources */,
 				CEF1D4681976757800D4B18E /* main.m in Sources */,
 				CEF1D7031976D43A00D4B18E /* FMDatabase.m in Sources */,
 				CEF1D7071976D43A00D4B18E /* FMResultSet.m in Sources */,
+				CE80723419776A5E0002F552 /* YNGongzuoViewController.m in Sources */,
 				CEF1D73B19775A9F00D4B18E /* AFHTTPSessionManager.m in Sources */,
 				CEF1D6EE1976BCBB00D4B18E /* LoginViewController.m in Sources */,
 				CEF1D74719775C5200D4B18E /* TaskViewController.m in Sources */,

@@ -7,7 +7,7 @@
 //
 
 #import "TaskViewController.h"
-//#import "YNGongzuoViewController.h"
+#import "YNGongzuoViewController.h"
 
 @interface TaskViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *workunitText;
@@ -79,9 +79,9 @@
     //－－－－－－－－－－－－－－－－－－－－数据库复制结束－－－－－－－－－－－－－－－－－－－－－－－－
     
     
-//    YNGongzuoViewController *gongZuo = [[YNGongzuoViewController alloc] init];
-//    gongZuo.ip_path=self.ip_path;
-//    [self.navigationController pushViewController:gongZuo animated:NO];
+    YNGongzuoViewController *gongZuo = [[YNGongzuoViewController alloc] init];
+    gongZuo.ip_path=self.ip_path;
+    [self.navigationController pushViewController:gongZuo animated:NO];
 }
 
 - (void)didReceiveMemoryWarning
