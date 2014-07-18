@@ -7,7 +7,7 @@
 //
 
 #import "YNXianchangkanchaViewController.h"
-//#import "YNkanchaViewController.h"
+#import "YNkanchaViewController.h"
 //#import "PeiDianXianChangKanChaViewController.h"
 
 @interface YNXianchangkanchaViewController ()
@@ -29,6 +29,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    CGRect frame = CGRectMake(self.view.bounds.origin.x, self.view.bounds.origin.y+50, self.view.bounds.size.height, self.view.bounds.size.width);
+    UITableView *tableView = [[UITableView alloc]initWithFrame:frame style:UITableViewStyleGrouped];
+    tableView.delegate=self;
+    tableView.dataSource = self;
+    [self.view addSubview:tableView];
 	// Do any additional setup after loading the view.
 }
 //分几组
@@ -51,12 +56,13 @@
     
     if (0==indexPath.section) {
         switch (indexPath.row) {
-            case 1:
-                cell.textLabel.text=@"配电网电气操作现场勘查记录";
-                break;
             case 0:
                 cell.textLabel.text=@"勘查记录单";
                 break;
+            case 1:
+                cell.textLabel.text=@"配电网电气操作现场勘查记录";
+                break;
+            
             default:
                 break;
         }
@@ -78,28 +84,29 @@
 -(void )tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
 ////    YNpaigongdanViewController *paigongdan=[[YNpaigongdanViewController alloc]init];
-//    YNkanchaViewController *kan=[[YNkanchaViewController alloc]init];
+    YNkanchaViewController *kan=[[YNkanchaViewController alloc]init];
 //    PeiDianXianChangKanChaViewController *peiKanCha = [[PeiDianXianChangKanChaViewController alloc]init];
-//    if (0==indexPath.section)
-//    {
-//        switch (indexPath.row)
-//        {
+    if (0==indexPath.section)
+    {
+        switch (indexPath.row)
+        {
+            case 0:
+                //跳转到勘察记录单
+                
+                kan.ip_path=self.ip_path;
+                [self.navigationController pushViewController:kan animated:YES];
+                break;
 //            case 1:
 //                //配电网电气操作现场勘查记录
 ////                paigongdan.ip_path=self.ip_path;
 //                peiKanCha.ip_path=self.ip_path;
 //              [self.navigationController pushViewController:peiKanCha animated:YES];
 //                break;
-//            case 0:
-//                //跳转到勘察记录单
-//                
-//                kan.ip_path=self.ip_path;
-//                [self.navigationController pushViewController:kan animated:YES];
-//                break;
-//            default:
-//                break;
-//        }
-//    }
+           
+            default:
+                break;
+        }
+    }
 }
 
 
