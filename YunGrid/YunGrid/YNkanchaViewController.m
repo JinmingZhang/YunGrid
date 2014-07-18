@@ -13,7 +13,7 @@
 #import "AFHTTPRequestOperationManager.h"
 #import "YNGongzuoViewController.h"
 #import "YNXianchangkanchaViewController.h"
-//#import "ImageeditorViewController.h"
+#import "ImageeditorViewController.h"
 #import "SignatureViewController.h"
 
 @interface YNkanchaViewController ()
@@ -246,9 +246,9 @@
 }
 
 - (IBAction)ImageEditorButton:(id)sender {
-//    ImageEditorViewController *ie=[[ImageEditorViewController alloc] init];
-//    ie.ip_path=self.ip_path;
-//    [self.navigationController pushViewController:ie animated:YES];
+    ImageEditorViewController *ie=[[ImageEditorViewController alloc] init];
+    ie.ip_path=self.ip_path;
+    [self.navigationController pushViewController:ie animated:YES];
 }
 
 

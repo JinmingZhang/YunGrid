@@ -62,7 +62,7 @@
         
 //        [self setRequest:[ASIFormDataRequest requestWithURL:[NSURL URLWithString:urlString]]];
         [resultSetpost next];
-        
+//        此处MKNetworkKit 上传图片。
         MKNetworkEngine *engine=[[MKNetworkEngine alloc]initWithHostName:@"172.27.35.1" customHeaderFields:nil];
         MKNetworkOperation *op=[engine operationWithPath:@"/ndzygk/peiwangzuoye/ipad_anquanjishujiaodidan_xl_c/saveGongzuopiaoSign" params:nil httpMethod:@"POST"];
 //        [op addFile:docsdir forKey:@"file"];
