@@ -76,6 +76,8 @@
 		CE8073F5197903CD0002F552 /* CLTextSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8073EE197903CD0002F552 /* CLTextSettingView.m */; };
 		CE8073F6197903CD0002F552 /* CLTextTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8073F0197903CD0002F552 /* CLTextTool.m */; };
 		CEE7CEA1197F567B00362A8B /* YNGrid.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = CEE7CEA0197F567B00362A8B /* YNGrid.sqlite3 */; };
+		CEE7CEA71980A7AC00362A8B /* MasterTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7CEA61980A7AC00362A8B /* MasterTableViewController.m */; };
+		CEE7CEAA1980A8BF00362A8B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE7CEA91980A8BF00362A8B /* DetailViewController.m */; };
 		CEF1D45C1976757800D4B18E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF1D45B1976757800D4B18E /* Foundation.framework */; };
 		CEF1D45E1976757800D4B18E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF1D45D1976757800D4B18E /* CoreGraphics.framework */; };
 		CEF1D4601976757800D4B18E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF1D45F1976757800D4B18E /* UIKit.framework */; };
@@ -268,6 +270,10 @@
 		CE8073EF197903CD0002F552 /* CLTextTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLTextTool.h; sourceTree = "<group>"; };
 		CE8073F0197903CD0002F552 /* CLTextTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLTextTool.m; sourceTree = "<group>"; };
 		CEE7CEA0197F567B00362A8B /* YNGrid.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = YNGrid.sqlite3; sourceTree = "<group>"; };
+		CEE7CEA51980A7AC00362A8B /* MasterTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterTableViewController.h; sourceTree = "<group>"; };
+		CEE7CEA61980A7AC00362A8B /* MasterTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MasterTableViewController.m; sourceTree = "<group>"; };
+		CEE7CEA81980A8BF00362A8B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		CEE7CEA91980A8BF00362A8B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		CEF1D4581976757800D4B18E /* YunGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YunGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF1D45B1976757800D4B18E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEF1D45D1976757800D4B18E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -815,6 +821,10 @@
 				CEF1D6ED1976BCBB00D4B18E /* LoginViewController.xib */,
 				CEF1D6F01976C56E00D4B18E /* ClassofWorkViewController.h */,
 				CEF1D6F11976C58C00D4B18E /* ClassofWorkViewController.m */,
+				CEE7CEA51980A7AC00362A8B /* MasterTableViewController.h */,
+				CEE7CEA61980A7AC00362A8B /* MasterTableViewController.m */,
+				CEE7CEA81980A8BF00362A8B /* DetailViewController.h */,
+				CEE7CEA91980A8BF00362A8B /* DetailViewController.m */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -1015,6 +1025,7 @@
 				CEF1D73919775A9F00D4B18E /* AFHTTPRequestOperation.m in Sources */,
 				CE7F8BD0197CA1D000C6EFA3 /* InfosViewController.m in Sources */,
 				CEF1D4681976757800D4B18E /* main.m in Sources */,
+				CEE7CEA71980A7AC00362A8B /* MasterTableViewController.m in Sources */,
 				CE8073A2197901A90002F552 /* CLPosterizeEffect.m in Sources */,
 				CEF1D7031976D43A00D4B18E /* FMDatabase.m in Sources */,
 				CE8073DF197903490002F552 /* _CLImageEditorViewController.m in Sources */,
@@ -1047,6 +1058,7 @@
 				CE8072B11977B6630002F552 /* Reachability.m in Sources */,
 				CEF1D74019775A9F00D4B18E /* AFURLResponseSerialization.m in Sources */,
 				CEF1D7051976D43A00D4B18E /* FMDatabasePool.m in Sources */,
+				CEE7CEAA1980A8BF00362A8B /* DetailViewController.m in Sources */,
 				CE80728F1977AA4D0002F552 /* SignatureViewQuartzQuadratic.m in Sources */,
 				CE8073DB197903200002F552 /* UIView+Frame.m in Sources */,
 				CE80738E1979015A0002F552 /* CLAdjustmentTool.m in Sources */,
