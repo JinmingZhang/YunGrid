@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "InfosViewController.h"
 #import "FMDatabase.h"
 #import "FMResultSet.h"
 
@@ -54,5 +55,6 @@
 - (IBAction)panduandaoda:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *shifou;
+- (IBAction)getInfos:(id)sender;
 
 @end

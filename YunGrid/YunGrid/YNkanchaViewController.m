@@ -150,6 +150,7 @@
     
     
 }
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -262,4 +263,10 @@
 
 }
 
+
+- (IBAction)getInfos:(id)sender {
+    InfosViewController *infosVC=[[InfosViewController alloc]init];
+    infosVC.ip_path=self.ip_path;
+    [self.navigationController pushViewController:infosVC animated:YES];
+}
 @end

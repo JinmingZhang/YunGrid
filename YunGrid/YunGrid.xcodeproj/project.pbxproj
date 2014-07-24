@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE7F8BD0197CA1D000C6EFA3 /* InfosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE7F8BCE197CA1D000C6EFA3 /* InfosViewController.m */; };
+		CE7F8BD1197CA1D000C6EFA3 /* InfosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE7F8BCF197CA1D000C6EFA3 /* InfosViewController.xib */; };
+		CE7F8BD3197CA51A00C6EFA3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7F8BD2197CA51A00C6EFA3 /* CoreLocation.framework */; };
 		CE80723419776A5E0002F552 /* YNGongzuoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80723319776A5E0002F552 /* YNGongzuoViewController.m */; };
 		CE80723A19776BF20002F552 /* YNXianchangkanchaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80723919776BF20002F552 /* YNXianchangkanchaViewController.m */; };
 		CE80723D19776C3C0002F552 /* FileListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE80723C19776C3C0002F552 /* FileListViewController.m */; };
@@ -72,6 +75,7 @@
 		CE8073F4197903CD0002F552 /* CLTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8073EC197903CD0002F552 /* CLTextLabel.m */; };
 		CE8073F5197903CD0002F552 /* CLTextSettingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8073EE197903CD0002F552 /* CLTextSettingView.m */; };
 		CE8073F6197903CD0002F552 /* CLTextTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8073F0197903CD0002F552 /* CLTextTool.m */; };
+		CEE7CEA1197F567B00362A8B /* YNGrid.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = CEE7CEA0197F567B00362A8B /* YNGrid.sqlite3 */; };
 		CEF1D45C1976757800D4B18E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF1D45B1976757800D4B18E /* Foundation.framework */; };
 		CEF1D45E1976757800D4B18E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF1D45D1976757800D4B18E /* CoreGraphics.framework */; };
 		CEF1D4601976757800D4B18E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF1D45F1976757800D4B18E /* UIKit.framework */; };
@@ -121,7 +125,6 @@
 		CEF1D74019775A9F00D4B18E /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1D73619775A9F00D4B18E /* AFURLResponseSerialization.m */; };
 		CEF1D74119775A9F00D4B18E /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1D73819775A9F00D4B18E /* AFURLSessionManager.m */; };
 		CEF1D74719775C5200D4B18E /* TaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEF1D74619775C5200D4B18E /* TaskViewController.m */; };
-		CEF1D749197761B000D4B18E /* YNGrid.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = CEF1D748197761B000D4B18E /* YNGrid.sqlite3 */; };
 		CEF1D74B1977623600D4B18E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF1D74A1977623600D4B18E /* libz.dylib */; };
 		CEF1D74D1977624700D4B18E /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CEF1D74C1977624700D4B18E /* libsqlite3.0.dylib */; };
 /* End PBXBuildFile section */
@@ -137,6 +140,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE7F8BCD197CA1D000C6EFA3 /* InfosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfosViewController.h; sourceTree = "<group>"; };
+		CE7F8BCE197CA1D000C6EFA3 /* InfosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfosViewController.m; sourceTree = "<group>"; };
+		CE7F8BCF197CA1D000C6EFA3 /* InfosViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfosViewController.xib; sourceTree = "<group>"; };
+		CE7F8BD2197CA51A00C6EFA3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CE80723219776A560002F552 /* YNGongzuoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YNGongzuoViewController.h; sourceTree = "<group>"; };
 		CE80723319776A5E0002F552 /* YNGongzuoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YNGongzuoViewController.m; sourceTree = "<group>"; };
 		CE80723819776BEC0002F552 /* YNXianchangkanchaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YNXianchangkanchaViewController.h; sourceTree = "<group>"; };
@@ -260,6 +267,7 @@
 		CE8073EE197903CD0002F552 /* CLTextSettingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLTextSettingView.m; sourceTree = "<group>"; };
 		CE8073EF197903CD0002F552 /* CLTextTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLTextTool.h; sourceTree = "<group>"; };
 		CE8073F0197903CD0002F552 /* CLTextTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLTextTool.m; sourceTree = "<group>"; };
+		CEE7CEA0197F567B00362A8B /* YNGrid.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = YNGrid.sqlite3; sourceTree = "<group>"; };
 		CEF1D4581976757800D4B18E /* YunGrid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YunGrid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEF1D45B1976757800D4B18E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CEF1D45D1976757800D4B18E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -331,7 +339,6 @@
 		CEF1D73819775A9F00D4B18E /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		CEF1D74519775C4900D4B18E /* TaskViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TaskViewController.h; sourceTree = "<group>"; };
 		CEF1D74619775C5200D4B18E /* TaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaskViewController.m; sourceTree = "<group>"; };
-		CEF1D748197761B000D4B18E /* YNGrid.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = YNGrid.sqlite3; sourceTree = "<group>"; };
 		CEF1D74A1977623600D4B18E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		CEF1D74C1977624700D4B18E /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -341,6 +348,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7F8BD3197CA51A00C6EFA3 /* CoreLocation.framework in Frameworks */,
 				CE8072B71977B8260002F552 /* Security.framework in Frameworks */,
 				CE8072B51977B8160002F552 /* SystemConfiguration.framework in Frameworks */,
 				CE8072B31977B7F90002F552 /* CFNetwork.framework in Frameworks */,
@@ -389,6 +397,9 @@
 				CE8072451977736C0002F552 /* YNkanchaViewController.h */,
 				CE807246197773730002F552 /* YNkanchaViewController.m */,
 				CE8072481977737D0002F552 /* kancha.xib */,
+				CE7F8BCD197CA1D000C6EFA3 /* InfosViewController.h */,
+				CE7F8BCE197CA1D000C6EFA3 /* InfosViewController.m */,
+				CE7F8BCF197CA1D000C6EFA3 /* InfosViewController.xib */,
 			);
 			name = "现场勘查";
 			sourceTree = "<group>";
@@ -709,6 +720,7 @@
 		CEF1D45A1976757800D4B18E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE7F8BD2197CA51A00C6EFA3 /* CoreLocation.framework */,
 				CE8072B61977B8260002F552 /* Security.framework */,
 				CE8072B41977B8160002F552 /* SystemConfiguration.framework */,
 				CE8072B21977B7F90002F552 /* CFNetwork.framework */,
@@ -726,7 +738,7 @@
 		CEF1D4611976757800D4B18E /* YunGrid */ = {
 			isa = PBXGroup;
 			children = (
-				CEF1D748197761B000D4B18E /* YNGrid.sqlite3 */,
+				CEE7CEA0197F567B00362A8B /* YNGrid.sqlite3 */,
 				CEF1D46A1976757800D4B18E /* AppDelegate.h */,
 				CEF1D46B1976757800D4B18E /* AppDelegate.m */,
 				CE8072BD1978F7C40002F552 /* Reference */,
@@ -937,9 +949,9 @@
 				CEF1D6DB1976BA5E00D4B18E /* login.png in Resources */,
 				CEF1D6EF1976BCBB00D4B18E /* LoginViewController.xib in Resources */,
 				CEF1D6DE1976BA5E00D4B18E /* main@2x.png in Resources */,
+				CEE7CEA1197F567B00362A8B /* YNGrid.sqlite3 in Resources */,
 				CE8073E0197903490002F552 /* _CLImageEditorViewController.xib in Resources */,
 				CEF1D6E61976BA5E00D4B18E /* talePole@2x.png in Resources */,
-				CEF1D749197761B000D4B18E /* YNGrid.sqlite3 in Resources */,
 				CEF1D6E51976BA5E00D4B18E /* talePole.png in Resources */,
 				CEF1D6D91976BA5E00D4B18E /* edit.png in Resources */,
 				CEF1D46E1976757800D4B18E /* Images.xcassets in Resources */,
@@ -954,6 +966,7 @@
 				CEF1D6E31976BA5E00D4B18E /* save.png in Resources */,
 				CEF1D6E41976BA5E00D4B18E /* save@2x.png in Resources */,
 				CEF1D6E71976BA5E00D4B18E /* textUnderline@2x.png in Resources */,
+				CE7F8BD1197CA1D000C6EFA3 /* InfosViewController.xib in Resources */,
 				CEF1D6DC1976BA5E00D4B18E /* login_background@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1000,6 +1013,7 @@
 				CE807247197773730002F552 /* YNkanchaViewController.m in Sources */,
 				CE8073D8197903200002F552 /* CLSplineInterpolator.m in Sources */,
 				CEF1D73919775A9F00D4B18E /* AFHTTPRequestOperation.m in Sources */,
+				CE7F8BD0197CA1D000C6EFA3 /* InfosViewController.m in Sources */,
 				CEF1D4681976757800D4B18E /* main.m in Sources */,
 				CE8073A2197901A90002F552 /* CLPosterizeEffect.m in Sources */,
 				CEF1D7031976D43A00D4B18E /* FMDatabase.m in Sources */,

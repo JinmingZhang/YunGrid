@@ -67,6 +67,7 @@
         MKNetworkOperation *op=[engine operationWithPath:@"/ndzygk/peiwangzuoye/ipad_anquanjishujiaodidan_xl_c/saveGongzuopiaoSign" params:nil httpMethod:@"POST"];
 //        [op addFile:docsdir forKey:@"file"];
 //        [op addFile:self.savedImagePath forKey:@"file" mimeType:@"png"];
+
         [op setFreezable:YES];
         [op addCompletionHandler:^(MKNetworkOperation *completeOperation){
             NSLog(@"上传成功");
@@ -83,97 +84,7 @@
         [resultSetpost close];
         [db close];
     }
-//    //如果来自三大措施
-//    else if ([self.pageFrom isEqual:@"sanda"]){
-//        [db open];
-//        urlString=[NSString stringWithFormat:@"http://%@/ndzygk/peiwangzuoye/ipad_anquanjishujiaodidan_xl_c/saveSandacuoshiSign",self.ip_path];
-//        NSLog(@"%@",dataBasePath);
-//        //NSString *dataBasePath =[[NSBundle mainBundle]pathForResource:@"YNGrid.sqlite3" ofType:nil];
-//        FMResultSet *resultSetpost = [db executeQuery:@"select * from sandaocuoshi"];
-//        
-//        [self setRequest:[ASIFormDataRequest requestWithURL:[NSURL URLWithString:urlString]]];
-//        [resultSetpost next];
-//        NSLog(@"id: %@",[resultSetpost stringForColumn:@"id"]);
-//        //[self.request setPostValue:[resultSetpost stringForColumn:@"id"] forKey:@"id"];
-//        
-//        [self.request setFile:self.savedImagePath withFileName:@"file.jpg" andContentType:@"image/jpg" forKey:@"file"];
-//        [self.request setTimeOutSeconds:20];
-//        [self.request startAsynchronous];
-//        [resultSetpost close];
-//        [db close];
-//    }
-//    //如果来自安全技术交底单
-//    else if([self.pageFrom isEqual:@"security"]){
-//        //安全交底单_签名提交路径
-//#warning url need upate
-//        urlString=[NSString stringWithFormat:@"http://%@/ndzygk/peiwangzuoye/ipad_anquanjishujiaodidan_xl_c/saveSandacuoshiSign",self.ip_path];
-//        //数据库取出id值
-//        [db open];
-//        FMResultSet *resultSetpost  = [db executeQuery:@"select * from anquanjishujiaodidan_XL"];
-//        [self setRequest:[ASIFormDataRequest requestWithURL:[NSURL URLWithString:urlString]]];
-//        [resultSetpost next];
-//        NSLog(@"id: %@",[resultSetpost stringForColumn:@"id"]);
-//        [self.request setPostValue:[resultSetpost stringForColumn:@"id"] forKey:@"id"];
-//        
-//        //存储签名来自的人
-//        NSArray *man=[[NSArray alloc] initWithObjects:@"work_man",@"departmant_man", nil];
-//        //如果签名来自运行部门，则提交man = departmant_man
-//        if ([self.signFrom isEqual:@"yunxing"]) {
-//            [self.request setPostValue:[man objectAtIndex:1] forKey:@"man"];
-//            
-//        }else if([self.signFrom isEqual:@"shigong"]){
-//            [self.request setPostValue:[man objectAtIndex:0] forKey:@"man"];
-//        }
-//        [self.request setFile:self.savedImagePath withFileName:@"file.jpg" andContentType:@"image/jpg" forKey:@"file"];
-//        [self.request setTimeOutSeconds:20];
-//        [self.request startAsynchronous];
-//        [resultSetpost close];
-//        [db close];
-//    }
-//    //如果来自现场勘察记录单
-//    else if([self.pageFrom isEqual:@"kancha"]){
-//        [db open];
-//        
-//        //现场勘察记录的url
-//#warning url need upate
-//        urlString=[NSString stringWithFormat:@"http://%@/ndzygk/peiwangzuoye/ipad_anquanjishujiaodidan_xl_c/saveSandacuoshiSign",self.ip_path];
-//        NSLog(@"%@",dataBasePath);
-//        //NSString *dataBasePath =[[NSBundle mainBundle]pathForResource:@"YNGrid.sqlite3" ofType:nil];
-//        FMResultSet *resultSetpost = [db executeQuery:@"select * from sandaocuoshi"];
-//        
-//        [self setRequest:[ASIFormDataRequest requestWithURL:[NSURL URLWithString:urlString]]];
-//        [resultSetpost next];
-//        NSLog(@"id: %@",[resultSetpost stringForColumn:@"id"]);
-//        //[self.request setPostValue:[resultSetpost stringForColumn:@"id"] forKey:@"id"];
-//        
-//        [self.request setFile:self.savedImagePath withFileName:@"file.jpg" andContentType:@"image/jpg" forKey:@"file"];
-//        [self.request setTimeOutSeconds:20];
-//        [self.request startAsynchronous];
-//        [resultSetpost close];
-//        [db close];
-//    }
-//    //如果来自工作票终结
-//#warning 向黄师兄确定工作票终结的提交地址和内容
-//    else if ([self.pageFrom isEqual:@"TaskEnding"]){
-//        [db open];
-//        urlString=[NSString stringWithFormat:@"http://%@/ndzygk/peiwangzuoye/ipad_anquanjishujiaodidan_xl_c/saveGongzuopiaoSign",self.ip_path];
-//        
-//        NSLog(@"%@",dataBasePath);
-//        //NSString *dataBasePath =[[NSBundle mainBundle]pathForResource:@"YNGrid.sqlite3" ofType:nil];
-//        FMResultSet *resultSetpost = [db executeQuery:@"select * from gongzuopiao"];
-//        
-//        [self setRequest:[ASIFormDataRequest requestWithURL:[NSURL URLWithString:urlString]]];
-//        [resultSetpost next];
-//        NSLog(@"id: %@",[resultSetpost stringForColumn:@"id"]);
-//        [self.request setPostValue:[resultSetpost stringForColumn:@"id"] forKey:@"id"];
-//        
-//        [self.request setFile:self.savedImagePath withFileName:@"file.jpg" andContentType:@"image/jpg" forKey:@"file"];
-//        [self.request setTimeOutSeconds:20];
-//        [self.request startAsynchronous];
-//        [resultSetpost close];
-//        [db close];
-//    }
-//    
+   
     //pop到上一个页面
     [self.navigationController popViewControllerAnimated:YES];
 //
